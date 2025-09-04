@@ -253,7 +253,7 @@ if defined CURSOR_WORKS (
         ) else (
             echo [AVISO] No se pudo generar la lista de extensiones
             echo Creando archivo de extensiones vacío...
-            echo # Extensiones no detectadas > extensions\extensions.txt
+            rem echo # Extensiones no detectadas > extensions\extensions.txt
         )
         if exist "!EXT_SCRIPT!" del "!EXT_SCRIPT!"
     ) else (
