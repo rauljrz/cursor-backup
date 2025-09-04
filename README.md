@@ -1,6 +1,6 @@
 # CURSOR Configuration Backup
 
-**Fecha de backup:** Thu 09/04/2025 12:23:14.77
+**Fecha de backup:** Thu 09/04/2025 12:30:18.65
 **Usuario:** rauljrz
 **PC:** HP-DESK
 

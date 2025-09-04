@@ -191,7 +191,7 @@ echo.
 echo Backup Script: %BACKUP_SCRIPT%
 echo Task Name: %TASK_NAME%
 echo Repository: git@github.com:rauljrz/cursor-backup.git
-echo Local Path: O:\My Drive\Life_Management\cursor_backup
+echo Local Path: O:\My Drive\cursor_backup
 echo.
 echo Schedule: %DESCRIPTION%
 echo.

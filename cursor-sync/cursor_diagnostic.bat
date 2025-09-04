@@ -173,7 +173,7 @@ if %errorlevel% equ 0 (
 echo.
 echo [7/10] Verificando ruta de backup...
 
-set "BACKUP_LOCAL=O:\My Drive\Life_Management\cursor_backup"
+set "BACKUP_LOCAL=O:\My Drive\cursor_backup"
 echo - Ruta backup: %BACKUP_LOCAL%
 
 if exist "%BACKUP_LOCAL%" (
@@ -182,7 +182,7 @@ if exist "%BACKUP_LOCAL%" (
     echo [AVISO] Directorio de backup no existe
     
     REM Verificar directorio padre
-    if exist "O:\My Drive\Life_Management\" (
+    if exist "O:\My Drive\" (
         echo [INFO] Directorio padre existe, se puede crear la carpeta
     ) else (
         if exist "O:\My Drive\" (
@@ -266,7 +266,7 @@ if %errorlevel% neq 0 (
 if not exist "%BACKUP_LOCAL%" (
     echo 2. CREAR CARPETA DE BACKUP:
     echo    - Verificar que Google Drive este montado
-    echo    - Crear: O:\My Drive\Life_Management\cursor_backup
+    echo    - Crear: O:\My Drive\cursor_backup
     echo.
 )
 

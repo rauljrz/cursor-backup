@@ -5,7 +5,7 @@ Sistema completo de sincronización de configuración de CURSOR usando Git, basa
 ## 📁 Configuración del Sistema
 
 - **Repositorio GitHub**: `git@github.com:rauljrz/cursor-backup.git`
-- **Carpeta local**: `O:\My Drive\Life_Management\cursor_backup`
+- **Carpeta local**: `O:\My Drive\cursor_backup`
 - **Configuración CURSOR**: `%APPDATA%\Cursor\User\`
 
 ## 📋 Prerequisitos
@@ -127,8 +127,8 @@ schtasks /delete /tn "CursorAutoSync" /f
 
 ### Comandos Git Manuales
 ```cmd
-# En la carpeta: O:\My Drive\Life_Management\cursor_backup
-cd "O:\My Drive\Life_Management\cursor_backup"
+# En la carpeta: O:\My Drive\cursor_backup
+cd "O:\My Drive\cursor_backup"
 
 # Ver estado del repositorio
 git status
@@ -182,7 +182,7 @@ Siguiendo el artículo original, este sistema implementa:
 
 ### Error: "No se puede crear la carpeta de backup"
 **Solución**: 
-1. Verifica que existe `O:\My Drive\Life_Management\`
+1. Verifica que existe `O:\My Drive\`
 2. Ejecuta como administrador si es necesario
 3. Modifica la ruta en los scripts si es necesaria
 
@@ -207,7 +207,7 @@ copy "%APPDATA%\Cursor\User\backups\settings_backup_*.json" "%APPDATA%\Cursor\Us
 
 ### Reinstalar todas las extensiones
 ```cmd
-cd "O:\My Drive\Life_Management\cursor_backup"
+cd "O:\My Drive\cursor_backup"
 for /f %i in (extensions\extensions.txt) do cursor --install-extension "%i"
 ```
 

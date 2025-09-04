@@ -13,12 +13,12 @@ echo    CURSOR Git Sync Tool
 echo ========================================
 echo.
 echo Repositorio: git@github.com:rauljrz/cursor-backup.git
-echo Carpeta local: O:\My Drive\Life_Management\cursor_backup
+echo Carpeta local: O:\My Drive\cursor_backup
 echo.
 
 REM Definir rutas
 set "CURSOR_PATH=%APPDATA%\Cursor\User"
-set "BACKUP_LOCAL=O:\My Drive\Life_Management\cursor_backup"
+set "BACKUP_LOCAL=O:\My Drive\cursor_backup"
 REM set "BACKUP_LOCAL=E:\cursor_backup"
 set "REPO_URL=git@github.com:rauljrz/cursor-backup.git"
 
