@@ -10,12 +10,12 @@ echo    CURSOR Git Restore Tool
 echo ========================================
 echo.
 echo Repositorio: git@github.com:rauljrz/cursor-backup.git
-echo Carpeta local: O:\My Drive\cursor_backup
+echo Carpeta local: C:\tools\cursor_backup
 echo.
 
 REM Definir rutas
 set "CURSOR_PATH=%APPDATA%\Cursor\User"
-set "BACKUP_LOCAL=O:\My Drive\cursor_backup"
+set "BACKUP_LOCAL=C:\tools\cursor_backup"
 set "REPO_URL=git@github.com:rauljrz/cursor-backup.git"
 
 REM Verificar si Git está instalado
@@ -36,10 +36,10 @@ if not exist "%BACKUP_LOCAL%" (
     echo Clonando repositorio desde GitHub...
     
     REM Crear directorio padre si no existe
-    mkdir "O:\My Drive\Life_Management" >nul 2>nul
+    mkdir "C:\tools" >nul 2>nul
     
     REM Clonar repositorio
-    cd /d "O:\My Drive\Life_Management"
+    cd /d "C:\tools"
     git clone "%REPO_URL%" "cursor_backup" >nul 2>nul
     
     if !errorlevel! neq 0 (
@@ -152,92 +152,22 @@ if exist "config\cli\cli-config.json" (
 )
 
 REM Restaurar estado global (solo storage.json)
-if exist "config\globalStorage\storage.json" (
-    echo [INFO] Archivo storage.json encontrado en el backup, restaurando...
+REM    copy "config\globalStorage\storage.json" "%CURSOR_PATH%\globalStorage\" >nul 2>nul
+REM if !errorlevel! equ 0 (
+REM echo [OK] Estado global (storage.json) restaurado
+REM ) else (
+REM echo [ERROR] No se pudo restaurar storage.json
+REM )
+
+REM if exist "config\globalStorage\storage.json" (
+   REM echo [INFO] Archivo storage.json encontrado en el backup, restaurando...
     
     REM Crear directorio de destino con manejo de errores
-    if not exist "%CURSOR_PATH%\globalStorage\" (
-        md "%CURSOR_PATH%\globalStorage" 2>nul
-        if !errorlevel! neq 0 (
-            echo [ERROR] No se pudo crear el directorio %CURSOR_PATH%\globalStorage
-            mkdir "%CURSOR_PATH%\globalStorage" 2>nul
-        ) else (
-            echo [OK] Directorio globalStorage creado
-        )
-    )
-    
-    REM Copiar el archivo
-    copy "config\globalStorage\storage.json" "%CURSOR_PATH%\globalStorage\" >nul 2>nul
-    if !errorlevel! equ 0 (
-        echo [OK] Estado global (storage.json) restaurado
-    ) else (
-        echo [ERROR] No se pudo restaurar storage.json
-    )
-) else (
-    echo [AVISO] Archivo storage.json no encontrado en el backup
-)
+REM ) else (
+REM    echo [AVISO] Archivo storage.json no encontrado en el backup
+REM )
 
 REM Verificar si 7-Zip está instalado
-where 7z >nul 2>nul
-set "USE_7Z=0"
-if %errorlevel% equ 0 (
-    set "USE_7Z=1"
-    echo [INFO] 7-Zip encontrado, se usará para descomprimir archivos
-) else (
-    echo [AVISO] 7-Zip no encontrado
-    echo [INFO] Para descomprimir archivos, instala 7-Zip desde https://www.7-zip.org/
-)
-
-REM Restaurar historial
-if exist "config\History.7z" (
-    if "!USE_7Z!" == "1" (
-        echo [INFO] Descomprimiendo historial...
-        if exist "%CURSOR_PATH%\History" rmdir /s /q "%CURSOR_PATH%\History" >nul 2>nul
-        7z x -y -o"%CURSOR_PATH%" "config\History.7z" >nul 2>nul
-        echo [OK] Historial restaurado desde archivo comprimido
-    ) else (
-        echo [AVISO] Archivo comprimido de historial encontrado pero 7-Zip no está instalado
-        echo [INFO] Instala 7-Zip para restaurar este componente
-    )
-) else if exist "config\History" (
-    echo [INFO] Restaurando historial (sin comprimir)...
-    if exist "%CURSOR_PATH%\History" rmdir /s /q "%CURSOR_PATH%\History" >nul 2>nul
-    xcopy "config\History" "%CURSOR_PATH%\History\" /e /i /q >nul
-    echo [OK] Historial restaurado
-) else (
-    echo [AVISO] Historial no encontrado en el backup
-)
-
-REM Restaurar workspaceStorage (opcional)
-set "WORKSPACE_FOUND=0"
-if exist "config\workspaceStorage.7z" set "WORKSPACE_FOUND=1"
-if exist "config\workspaceStorage" set "WORKSPACE_FOUND=1"
-
-if "!WORKSPACE_FOUND!" == "1" (
-    set /p "RESTORE_WORKSPACE=¿Restaurar workspaceStorage? (puede sobrescribir configuraciones actuales) (s/n): "
-    if /i "!RESTORE_WORKSPACE!" equ "s" (
-        if exist "config\workspaceStorage.7z" (
-            if "!USE_7Z!" == "1" (
-                echo [INFO] Descomprimiendo workspaceStorage (puede tardar)...
-                if exist "%CURSOR_PATH%\workspaceStorage" rmdir /s /q "%CURSOR_PATH%\workspaceStorage" >nul 2>nul
-                7z x -y -o"%CURSOR_PATH%" "config\workspaceStorage.7z" >nul 2>nul
-                echo [OK] workspaceStorage restaurado desde archivo comprimido
-            ) else (
-                echo [AVISO] Archivo comprimido de workspaceStorage encontrado pero 7-Zip no está instalado
-                echo [INFO] Instala 7-Zip para restaurar este componente
-            )
-        ) else if exist "config\workspaceStorage" (
-            echo [INFO] Restaurando workspaceStorage (sin comprimir)...
-            if exist "%CURSOR_PATH%\workspaceStorage" rmdir /s /q "%CURSOR_PATH%\workspaceStorage" >nul 2>nul
-            xcopy "config\workspaceStorage" "%CURSOR_PATH%\workspaceStorage\" /e /i /q >nul
-            echo [OK] workspaceStorage restaurado
-        )
-    ) else (
-        echo [INFO] Restauración de workspaceStorage omitida por el usuario
-    )
-) else (
-    echo [AVISO] workspaceStorage no encontrado en el backup
-)
 
 echo.
 echo Procesando extensiones...
