@@ -1,0 +1,79 @@
+{
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "editor.renderWhitespace": "all",
+    "bitoAI.codeCompletion.enableAutoCompletion": true,
+    "bitoAI.codeCompletion.enableCommentToCode": true,
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "editor.indentSize": "tabSize",
+    "sync.gist": "200e597240c9a28b38227a819935ff6d",
+    "tabnine.experimentalAutoImports": true,
+    "workbench.activityBar.orientation": "vertical",
+    "window.menuBarVisibility": "toggle",
+    "workbench.colorTheme": "One Dark Modern",
+    "workbench.tree.indent": 24,
+    "terminal.external.windowsExec": "C:\\Users\\rauljrz\\Documentos\\PortableApps\\cmder\\cmder.exe",
+    "workbench.editor.enablePreview": false,
+    "editor.minimap.enabled": true,
+    "editor.accessibilityPageSize": 12,
+    "terminal.integrated.profiles.windows": {
+        "Cmder": {
+            "path": "C:\\Users\\rauljrz\\Documentos\\PortableApps\\cmder\\cmder.exe",
+            "args": []
+        },
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        }
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "cursor.chat.smoothStreaming": true,
+    "cursor.cpp.enablePartialAccepts": true,
+    "cursor.cmdk.useThemedDiffBackground": true,
+    "cursor.diffs.useCharacterLevelDiffs": true,
+    "explorer.fileNesting.patterns": {
+        "*.ts": "${capture}.js",
+        "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+        "*.jsx": "${capture}.js",
+        "*.tsx": "${capture}.ts",
+        "tsconfig.json": "tsconfig.*.json",
+        "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+        "*.sqlite": "${capture}.${extname}-*",
+        "*.db": "${capture}.${extname}-*",
+        "*.sqlite3": "${capture}.${extname}-*",
+        "*.db3": "${capture}.${extname}-*",
+        "*.sdb": "${capture}.${extname}-*",
+        "*.s3db": "${capture}.${extname}-*"
+    },
+    "sqltools.useNodeRuntime": true,
+    "database-client.autoSync": true,
+    "sqltools.format": {},
+    "vscode-neovim.neovimExecutablePaths.linux": "C:\\Users\\rauljrz\\Documentos\\PortableApps\\Neovim\\bin\\nvim.exe",
+    "vscode-neovim.neovimExecutablePaths.win32": "C:\\Users\\rauljrz\\Documentos\\PortableApps\\Neovim\\bin\\nvim.exe",
+    "vscode-neovim.compositeKeys": {},
+    "terminal.integrated.automationProfile.windows": {},
+    "intelephense.compatibility.preferPsalmPhpstanPrefixedAnnotations": true,
+    "artisan.php.location": "C:\\laragon\\bin\\php\\php-8.2.27-nts-Win32-vs16-x64\\php.exe",
+    "diffEditor.maxComputationTime": 0,
+    "cursor.composer.shouldChimeAfterChatFinishes": true,
+    "cursor.composer.shouldAllowCustomModes": true,
+    "sync.forceUpload": true,
+    "sync.removeExtensions": false,
+    "sync.autoUpload": true,
+}
