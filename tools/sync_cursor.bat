@@ -236,6 +236,7 @@ echo.
 echo Generando lista de extensiones...
 
 REM Generar lista de extensiones instaladas
+set "CURSOR_WORKS=1"
 if defined CURSOR_WORKS (
     if "!CURSOR_WORKS!" == "1" (
         REM Usar script temporal para evitar problemas con el comando directo
