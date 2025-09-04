@@ -1,0 +1,162 @@
+{
+    "userDataProfilesMigration": true,
+    "profileAssociations": {
+        "workspaces": {
+            "file:///c%3A/Users/rauljrz/.cursor-tutor": "__default__profile__",
+            "file:///c%3A/Users/rauljrz/cursor-ai-project": "__default__profile__",
+            "file:///c%3A/laragon/www/cupones": "__default__profile__",
+            "file:///c%3A/laragon/www/updatemysql": "__default__profile__",
+            "file:///c%3A/Agontech_web/dispatcher_msg": "__default__profile__",
+            "file:///c%3A/laragon/www/presupuestos": "__default__profile__",
+            "file:///c%3A/laragon/www/agnt-servicios": "__default__profile__",
+            "file:///c%3A/laragon/www/documentos": "__default__profile__",
+            "file:///c%3A/laragon/www/agnt-customers": "__default__profile__",
+            "file:///c%3A/laragon/www/agnt-clientes": "__default__profile__",
+            "file:///c%3A/laragon/www/mayorista": "__default__profile__",
+            "file:///c%3A/Driver-e/python/web_scraping": "__default__profile__",
+            "file:///c%3A/laragon/www/factorcodelab": "__default__profile__",
+            "file:///c%3A/laragon/www/portfolio": "__default__profile__",
+            "file:///c%3A/laragon/www/auth/auth.code-workspace": "__default__profile__",
+            "file:///c%3A/laragon/www/agnt-fake": "__default__profile__",
+            "file:///c%3A/laragon/www/silicosas": "__default__profile__",
+            "file:///c%3A/laragon/www/whatsapp_api": "__default__profile__",
+            "file:///c%3A/laragon/www/whatsapp_card": "__default__profile__",
+            "file:///c%3A/laragon/www/agnt-resumen": "__default__profile__",
+            "file:///c%3A/laragon/www/agnt-compras": "__default__profile__",
+            "file:///c%3A/laragon/www/todo_py": "__default__profile__",
+            "file:///g%3A/gDriver/todo": "__default__profile__",
+            "file:///c%3A/Users/rauljrz/Documentos/PortableApps/cmder/vendor/bin": "__default__profile__",
+            "file:///c%3A/Users/rauljrz/Life_Management/Resources/Agontech/Logs28.08": "__default__profile__",
+            "file:///o%3A/My%20Drive/Life_Management/Resources/Personal/sobre%20todo.txt": "__default__profile__",
+            "file:///o%3A/My%20Drive/Life_Management": "__default__profile__",
+            "file:///c%3A/Driver-e/logs": "__default__profile__",
+            "file:///c%3A/laragon/www/agnt-cupones": "__default__profile__",
+            "file:///c%3A/laragon/www/agnt-econtable": "__default__profile__",
+            "file:///c%3A/laragon/www/productos": "__default__profile__",
+            "file:///c%3A/laragon/www/agnt-presupuestos": "__default__profile__",
+            "file:///c%3A/laragon/www/productos_grid": "__default__profile__",
+            "file:///c%3A/laragon/www/productos_prueba": "__default__profile__",
+            "file:///c%3A/laragon/www/agnt-documentos": "__default__profile__",
+            "file:///c%3A/laragon/www/readpdf": "__default__profile__",
+            "file:///g%3A/Factor": "__default__profile__",
+            "file:///c%3A/laragon/www/backoffice": "__default__profile__",
+            "file:///c%3A/laragon/www/agnt-utilities": "__default__profile__",
+            "file:///c%3A/laragon/www/dc-backoffice": "__default__profile__",
+            "file:///c%3A/laragon/www/restaurant": "__default__profile__",
+            "file:///c%3A/laragon/www/auth": "__default__profile__",
+            "file:///c%3A/laragon/www/wscpe": "__default__profile__",
+            "file:///c%3A/laragon/www/agnt-productos": "__default__profile__",
+            "file:///c%3A/laragon/www/moneytrack": "__default__profile__",
+            "file:///c%3A/Driver-e/todotxt_Extendend": "__default__profile__",
+            "file:///g%3A/Trabajos/MgcGardunioA": "__default__profile__",
+            "file:///g%3A/Trabajos/wsfelib": "__default__profile__",
+            "file:///c%3A/laragon/www/erp": "__default__profile__",
+            "file:///c%3A/Users/rauljrz/Dev/negrok": "__default__profile__",
+            "file:///c%3A/laragon/www/larament": "__default__profile__",
+            "file:///c%3A/Users/rauljrz/Dev/mailgun": "__default__profile__",
+            "file:///c%3A/laragon/www/companies": "__default__profile__",
+            "file:///c%3A/laragon/www/kaidokit": "__default__profile__",
+            "file:///c%3A/laragon/www/agontech": "__default__profile__",
+            "file:///c%3A/laragon/www/pasarelafiscal": "__default__profile__",
+            "file:///c%3A/laragon/www/pasareladigital": "__default__profile__",
+            "file:///c%3A/laragon/www/saas-panel": "__default__profile__",
+            "file:///c%3A/laragon/www/wsarca": "__default__profile__",
+            "file:///c%3A/laragon/www/serviciosarca": "__default__profile__",
+            "file:///c%3A/laragon/www/borrame1": "__default__profile__",
+            "file:///c%3A/laragon/www/arca": "__default__profile__",
+            "file:///c%3A/laragon/www/apiworks": "__default__profile__",
+            "file:///c%3A/Users/rauljrz/Dev/postman2html": "__default__profile__",
+            "file:///g%3A/Trabajos/FEARCALib": "__default__profile__",
+            "file:///g%3A/Trabajos/FEARCALib.vb": "__default__profile__",
+            "file:///g%3A/certificados_arca": "__default__profile__",
+            "file:///c%3A/laragon/www/perfex320": "__default__profile__",
+            "file:///c%3A/laragon/www/dcerp": "__default__profile__",
+            "file:///g%3A/cicd-agontech": "__default__profile__",
+            "file:///c%3A/laragon/www/nazmart": "__default__profile__",
+            "file:///c%3A/laragon/www/aplicacion": "__default__profile__",
+            "file:///c%3A/laragon/www/ninico": "__default__profile__",
+            "file:///c%3A/laragon/www/license": "__default__profile__",
+            "file:///c%3A/laragon/www/agnt-gestionproductos": "__default__profile__",
+            "file:///c%3A/laragon/www/perfumeriaaladdin": "__default__profile__",
+            "file:///g%3A/Trabajos/contabilidad": "__default__profile__",
+            "file:///c%3A/laragon/www/test": "__default__profile__",
+            "file:///c%3A/laragon/www/donweb": "__default__profile__",
+            "file:///g%3A/api-ecommerce": "__default__profile__",
+            "file:///g%3A/sample": "__default__profile__",
+            "file:///c%3A/laragon/www/estimado": "__default__profile__",
+            "file:///c%3A/tools/cursor-sync": "__default__profile__"
+        },
+        "emptyWindows": {}
+    },
+    "profileAssociationsMigration": true,
+    "telemetry.machineId": "1e7984a0a621536f4b21a459a91ac9061b184edb73e5f66d0a901f09e2e5a7a1",
+    "backupWorkspaces": {
+        "workspaces": [],
+        "folders": [
+            {
+                "folderUri": "file:///c%3A/tools/cursor-sync"
+            }
+        ],
+        "emptyWindows": []
+    },
+    "windowControlHeight": 30,
+    "theme": "vs-dark",
+    "themeBackground": "#282c34",
+    "windowSplash": {
+        "zoomLevel": 0,
+        "baseTheme": "vs-dark",
+        "colorInfo": {
+            "foreground": "#cccccc",
+            "background": "#282c34",
+            "editorBackground": "#282c34",
+            "titleBarBackground": "#282c34",
+            "activityBarBackground": "#282c34",
+            "sideBarBackground": "#22252a",
+            "statusBarBackground": "#343840",
+            "statusBarNoFolderBackground": "#232933"
+        },
+        "layoutInfo": {
+            "sideBarSide": "left",
+            "editorPartMinWidth": 220,
+            "titleBarHeight": 30,
+            "activityBarWidth": 48,
+            "sideBarWidth": 226,
+            "auxiliarySideBarWidth": 521,
+            "statusBarHeight": 22,
+            "windowBorder": false
+        }
+    },
+    "windowsState": {
+        "lastActiveWindow": {
+            "folder": "file:///c%3A/tools/cursor-sync",
+            "backupPath": "C:\\Users\\rauljrz\\AppData\\Roaming\\Cursor\\Backups\\6e1e7977a9f11b4b1b20eb04f8746a41",
+            "uiState": {
+                "mode": 0,
+                "x": 360,
+                "y": 140,
+                "width": 1200,
+                "height": 800
+            }
+        },
+        "openedWindows": []
+    },
+    "telemetry.sqmId": "{DB768600-4DED-4431-A8A3-0CBA97F7B87F}",
+    "telemetry.macMachineId": "672cb246e9f02aadc7fb214ae7b7cd483d0ac2436820d6bed94983a4f1619c2e",
+    "telemetry.devDeviceId": "88ef78c6-187f-4bff-bf67-cc051bde3f15",
+    "windowSplashWorkspaceOverride": {
+        "layoutInfo": {
+            "auxiliarySideBarWidth": [
+                521,
+                [
+                    "4ce71b3dec7d823387f60e575a7c99a2",
+                    "e974f938c2b442a3f1e1c260666e2f4e",
+                    "8cf1a88da3ab950af0c07bc73fac7d16",
+                    "a09fb3d7ccc5d2d8e5f40b8dc7b5441a",
+                    "2bc73350089282e492f953418aa8d26d",
+                    "4ff1dc56484bcc3258f94f3b3c51f678",
+                    "0f0651a83a694da13102c9d442a6eb8b"
+                ]
+            ]
+        }
+    }
+}
